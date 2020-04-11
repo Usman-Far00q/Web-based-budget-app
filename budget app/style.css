@@ -1,0 +1,192 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	width:100vw;
+	box-sizing: border-box;
+}
+.top_banner{
+	background-image: url(background_banner.jpg);
+	background-repeat: no-repeat;
+	width:100vw;
+	height:10cm;
+	background-size: 100% 130%;  /*IMPORTANT THIS IS HOW YOU MAKE A SCALEABLE IMAGE*/
+	background-position: 0 -50px;  /*SOMETIMES THE IMAGE DOESNT COVER THE CONTAINER ENTIRELY HENCE WE HAVE TO GO BEYOND 100%*/
+}
+.app_heading{
+	width:330px;
+	margin:0px auto;
+	text-align:center; 
+	font-size: 30px;
+	border-radius: 12px;
+	color:white;
+	text-shadow: 2px 2px black;
+	padding: 3px;
+}
+.budget{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 44px;
+	color:white;
+	text-shadow: 3px 3px black;
+}
+.income_bar{
+	margin:0 auto;   /*IMPOTANT THIS IS HOW YOU CENTER A CONTAINER (BUT IT SHOULD HAVE A FIXED WISTH DEFINED)*/
+	margin-top:20px;
+	background-color: rgba(40, 141 ,67 ,0.75);
+	width : 430px;
+	border-radius: 12px;
+	padding:5px;
+	color:white;
+}
+.expenses_bar{
+	margin:0 auto;
+	margin-top:20px;
+	background-color:rgba(225, 0 ,0 ,0.75);
+	width : 430px;
+	border-radius: 12px;
+	padding:5px;
+	color:white;
+}
+
+.expenses {
+	float:left;
+	font-size: 28px;
+}
+.income{
+	float:left;
+	font-size: 28px;
+}
+.income_amount {
+	font-size: 28px;
+	float: right;
+}
+.expensesamount{
+	font-size: 28px;
+	float: right;
+}
+.expenses_amount{
+	font-size: 28px;
+}
+.input_banner{
+	width:100vw;
+	background-color:lightgrey;
+	padding-bottom: 2vh;
+	text-align:center;
+}
+.selec{
+	padding:10px;
+	margin-right: 13px;
+}
+#description{
+	padding:10px;
+	margin-right: 13px;
+	width:9cm;
+}
+#amount{
+	padding:10px;
+	margin-right: 13px;
+	width:4cm;
+}
+.show_income{
+	width:50vw;
+	float:left;
+}
+.show_expense{
+	float:right;
+	width:50vw;
+}
+#INCOME{
+	font-size: 32px;
+	color: green;
+	text-shadow: 2px 1px black;
+	font-family: 'Roboto', sans-serif;
+}
+#EXPENSE{
+	font-size: 32px;
+	color: darkred;
+	text-shadow: 2px 1px black;
+	font-family: 'Roboto', sans-serif;
+}
+
+.button_check_mark{
+	background-image:url(tick.png);
+	height:48px;
+	width:48px;
+	border-radius: 50%;
+	position:relative;
+	top:1em;
+	box-shadow: 0 0 2px black , 0 0 2px black;
+}
+.button_check_mark:focus{
+	outline:0;    /* make the glow around the button(when clicked) go away*/
+}
+.button_check_mark:active{   /*IMPORTANT*/
+	position:relative;
+	top:1.5em;
+}
+.expensesamount span{
+	font-size: 20px;
+	background-color: rgb(189, 17, 17 );
+	padding:2px;
+	border-radius: 16%;
+}
+.in_type,.expenc_type{
+	float: left;
+	font-size: 22px;
+}
+.btn{
+	float: right;    
+	border:none;			 /*THIS IS HOW YOU REMOVE ALL THE STYLE FROM A BUTTON*/
+	background-color:red;
+	font-size: 16px;
+	margin-left:6px;
+	border-radius: 9px;
+	color:white; 
+	padding:2px;
+	position:relative;
+	top:0.1em;
+	display: none;
+	transition-duration: 500ms;  /*you cant do tansition when there is display mentioned (this is useless line of code)*/
+	
+}
+.btn:focus{
+	outline:0;    /* make the glow around the button(when clicked) go away*/
+}
+.in:hover .btn ,.expenc:hover .btn{   /* IMPORTANT*/
+	display: block;
+}
+
+.in_amount,.expenc_amount{
+	float:right;
+	margin-right: 12px;
+	font-family: 'Roboto', sans-serif;
+	text-shadow: 1px 1px black;
+	font-size: 22px;
+	color: red;
+}
+.in_amount{
+	color:green;
+}
+.expenc , .in{
+	border-top: 1px solid grey;
+	border-bottom:1px solid grey;
+}
+.in{
+	margin-right: 2em;
+}
+.in:nth-child(even),.expenc:nth-child(even){
+	background-color: lightgrey;
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+} 
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}

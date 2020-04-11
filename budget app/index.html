@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>budget app</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class= 'top_banner group' >
+		
+		<div class="app_heading">Available Budget In <span>Month</span></div>
+		<div class="budget">+0</div>
+		<div class = "income_bar group">
+			<div class="income">Income</div>
+			<div class="income_amount">0</div>
+		</div>
+        <div class="expenses_bar group">
+        	<div class="expenses">Expenses</div>
+        	<div class="expensesamount">
+        		<label class="expenses_amount">0</label>
+        		<span id="percent_expense">0%</span>
+            </div>
+        </div>
+	</div>
+	<div class="input_banner">
+		<select class="selec">
+			<option value = "inc">+</option>
+			<option value = "exp">-</option>
+		</select>
+		<input type="text" id="description" name="var_money_reason" placeholder="state reason for Expense/Income">
+		<input type="number" id="amount" name="var_value" placeholder="value">
+		<button class="button_check_mark"></button>
+	</div>
+	<div class="wrapper group">
+		<div class="show_income">
+			<span id="INCOME">INCOME</span>
+			<!-- <div class="in group" id=inc-%id%>
+				<div class="in_type"> Project </div>
+				<button class="btn cancel">cancel</button>
+				<div class="in_amount">2300</div>
+			</div> -->
+		</div>
+		<div class="show_expense">
+			<span id="EXPENSE">EXPENSES</span>
+			<!-- <div class="expenc group" id=exp-%id%>
+				<div class="expenc_type"> Project </div>
+				<button class="btn cancel">cancel</button>
+				<div class="expenc_amount">2300</div>
+			</div> -->
+		</div>	
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
